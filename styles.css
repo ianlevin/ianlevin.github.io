@@ -1,52 +1,88 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+/* Configuración general */
+body, html {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Fondo con degradado */
+.background {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #3a6186, #89253e);
+    color: #fff;
 }
 
+/* Contenedor principal */
 .container {
     text-align: center;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    width: 300px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
 }
 
+/* Títulos */
 h1 {
-    margin-bottom: 20px;
-    color: #333;
-}
-
-input {
-    padding: 10px;
-    font-size: 16px;
-    width: 80%;
+    font-size: 2em;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    color: #fff;
 }
 
+p {
+    font-size: 1em;
+    margin: 15px 0;
+    color: #fff;
+}
+
+/* Contenedor de input y botón */
+.input-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+/* Input del PIN */
+input {
+    width: 80px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+    background-color: #fff;
+}
+
+/* Botón de verificar */
 button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #007bff;
-    color: white;
     border: none;
     border-radius: 5px;
+    background-color: #56baed;
+    color: #fff;
     cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #3798dc;
 }
 
+/* Mensajes */
 #message {
+    font-size: 1em;
     margin-top: 15px;
-    font-size: 14px;
-    color: red;
+   
 }

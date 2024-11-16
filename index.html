@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>¡Bienvenido!</h1>
-        <p>Ingresa el PIN correcto para avanzar:</p>
-        <input type="password" id="pinInput" maxlength="4" placeholder="0000">
-        <button id="submitButton">Verificar</button>
-        <p id="message"></p>
+    <div class="background">
+        <div class="container">
+            <h1>¡Bienvenido!</h1>
+            <p>Ingresa el PIN de 4 dígitos para continuar</p>
+            <div class="input-container">
+                <input type="text" id="pinInput" maxlength="4" placeholder="****" autofocus>
+                <button id="verifyButton">Verificar</button>
+            </div>
+            <p id="message"></p>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

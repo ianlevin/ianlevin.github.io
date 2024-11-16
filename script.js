@@ -1,27 +1,31 @@
-// Cargar las contraseñas desde passwords.js
-import { passwords } from './passwords.js';
+// Lista de contraseñas (ya no importamos desde otro archivo)
+const passwords = ["1234", "5678", "9012", "3456"]; // Modifica las contraseñas según necesites
 
-let currentIndex = 0;
+let currentPasswordIndex = 0; // Índice de la contraseña actual
 
 const pinInput = document.getElementById("pinInput");
-const submitButton = document.getElementById("submitButton");
+const verifyButton = document.getElementById("verifyButton");
 const message = document.getElementById("message");
 
-submitButton.addEventListener("click", () => {
-    const userInput = pinInput.value;
-    if (userInput === passwords[currentIndex]) {
-        message.style.color = "green";
-        message.textContent = "¡Correcto! Ahora pasa al siguiente PIN.";
-        currentIndex++;
-        pinInput.value = "";
+// Verificar el PIN ingresado
+verifyButton.addEventListener("click", () => {
+    const userInput = pinInput.value.trim(); // Obtener valor del input
 
-        if (currentIndex >= passwords.length) {
-            message.textContent = "¡Felicitaciones! Has completado todos los PINs.";
-            pinInput.disabled = true;
-            submitButton.disabled = true;
+    if (userInput === passwords[currentPasswordIndex]) {
+        currentPasswordIndex++;
+        message.style.color = "green";
+
+        if (currentPasswordIndex < passwords.length) {
+            message.textContent = "¡Correcto! Ingresa el siguiente PIN.";
+        } else {
+            message.textContent = "¡Felicidades! Has completado todas las contraseñas.";
+            verifyButton.disabled = true; // Deshabilitar el botón al terminar
         }
     } else {
         message.style.color = "red";
-        message.textContent = "Número incorrecto. Intenta de nuevo.";
+        message.textContent = "PIN incorrecto. Intenta nuevamente.";
     }
+
+    pinInput.value = ""; // Limpiar el input
+    pinInput.focus(); // Enfocar el input
 });
