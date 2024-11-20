@@ -1,16 +1,16 @@
-const passwords = ["1234", "5678", "9012", "3456"]; // Contraseñas
+const passwords = ["9279", "5678", "9012", "3456"]; // Contraseñas
 const hints = [
-    "En este lugar podes ver un reflejo tuyo, podes limpiar lo sucio, podes desechar lo inutil.", 
-    "Pista 2: Empieza con 5", 
-    "Pista 3: Comienza con 9", 
-    "Pista 4: Es un número consecutivo"
+    "Cuando llego a tu casa tengo que....", 
+    "Que ganas de un masaje no??", 
+    "Quiero un mate ian....", 
+    ""
 ]; // Pistas correspondientes
 
 const additionalHints = [
-    "Pista adicional 1: Es un número con un solo dígito repetido",
-    "Pista adicional 2: Está en el rango de 5000-6000",
-    "Pista adicional 3: El primer dígito es mayor que 8",
-    "Pista adicional 4: Los números están en orden secuencial"
+    "Te las lavaste bien ian...",
+    "Algun dia vas a tener uno donde entremos...",
+    "Buscame otra que esta tapada...",
+    ""
 ]; // Pistas adicionales
 
 let currentPasswordIndex = 0; // Índice de la contraseña actual
