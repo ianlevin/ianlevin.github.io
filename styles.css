@@ -86,3 +86,30 @@ button:hover {
     margin-top: 15px;
    
 }
+
+
+#message {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#hintMessage, #additionalHintMessage {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #f1f1f1;
+    word-wrap: break-word; /* Permite que el texto largo se ajuste */
+    word-break: break-word; /* Garantiza que el texto largo se divida correctamente */
+    white-space: normal; /* Permite el salto de línea automático */
+    line-height: 1.5; /* Mejora la legibilidad */
+}
+
+#showHintButton {
+    margin-top: 10px;
+    background-color: #28a745;
+    cursor: pointer;
+}
+
+#showHintButton:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
