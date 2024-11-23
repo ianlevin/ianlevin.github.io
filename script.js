@@ -1,15 +1,17 @@
-const passwords = ["9279", "5678", "9012", "3456"]; // Contraseñas
+const passwords = ["9279", "9774", "4667", "3456"]; // Contraseñas
 const hints = [
     "Cuando llego a tu casa tengo que....", 
     "Que ganas de un masaje no??", 
     "Quiero un mate ian....", 
-    ""
+    "💩",
+    "Mira la habitacion mi amor..."
 ]; // Pistas correspondientes
 
 const additionalHints = [
     "Te las lavaste bien ian...",
     "Algun dia vas a tener uno donde entremos...",
     "Buscame otra que esta tapada...",
+    "Donde voy cuando...",
     ""
 ]; // Pistas adicionales
 
