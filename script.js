@@ -1,4 +1,4 @@
-const passwords = ["9279", "9774", "4667", "3456"]; // Contraseñas
+const passwords = ["9279", "9774", "4667", "1735"]; // Contraseñas
 const hints = [
     "Cuando llego a tu casa tengo que....", 
     "Que ganas de un masaje no??", 
